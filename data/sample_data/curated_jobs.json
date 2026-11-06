@@ -1,0 +1,302 @@
+[
+    {
+        "job_title": "Digital Marketing Specialist",
+        "role": "Social Media Manager",
+        "company": "Icahn Enterprises",
+        "experience": "5 to 15 Years",
+        "qualifications": "M.Tech",
+        "skills": "Social media platforms (e.g., Facebook, Twitter, Instagram) Content creation and scheduling Social media analytics and insights Community engagement Paid social advertising",
+        "responsibilities": "Manage and grow social media accounts, create engaging content, and interact with the online community. Develop social media content calendars and strategies. Monitor social media trends and engagement metrics.",
+        "description": "Social Media Managers oversee an organizations social media presence. They create and schedule content, engage with followers, and analyze social media metrics to drive brand awareness and engagement."
+    },
+    {
+        "job_title": "Web Developer",
+        "role": "Frontend Web Developer",
+        "company": "PNC Financial Services Group",
+        "experience": "2 to 12 Years",
+        "qualifications": "BCA",
+        "skills": "HTML, CSS, JavaScript Frontend frameworks (e.g., React, Angular) User experience (UX)",
+        "responsibilities": "Design and code user interfaces for websites, ensuring a seamless and visually appealing user experience. Collaborate with UX designers to optimize user journeys. Ensure cross-browser compatibility and responsive design.",
+        "description": "Frontend Web Developers design and implement user interfaces for websites, ensuring they are visually appealing and user-friendly. They collaborate with designers and backend developers to create seamless web experiences for users."
+    },
+    {
+        "job_title": "Operations Manager",
+        "role": "Quality Control Manager",
+        "company": "United Services Automobile Assn.",
+        "experience": "0 to 12 Years",
+        "qualifications": "PhD",
+        "skills": "Quality control processes and methodologies Statistical process control (SPC) Root cause analysis and corrective action Quality management systems (e.g., ISO 9001) Compliance and regulatory knowledge",
+        "responsibilities": "Establish and enforce quality control standards and procedures. Conduct quality audits and inspections. Collaborate with production teams to address quality issues and implement improvements.",
+        "description": "Quality Control Managers establish and enforce quality standards within an organization. They develop quality control processes, perform inspections, and implement corrective actions to maintain product or service quality."
+    },
+    {
+        "job_title": "Network Engineer",
+        "role": "Wireless Network Engineer",
+        "company": "Hess",
+        "experience": "4 to 11 Years",
+        "qualifications": "PhD",
+        "skills": "Wireless network design and architecture Wi-Fi standards and protocols RF (Radio Frequency) planning and optimization Wireless security protocols Troubleshooting wireless network issues",
+        "responsibilities": "Design, configure, and optimize wireless networks, ensuring reliable and secure wireless connectivity. Troubleshoot wireless network issues. Plan and implement wireless network upgrades.",
+        "description": "Wireless Network Engineers design, implement, and maintain wireless network solutions. They optimize wireless connectivity, troubleshoot issues, and ensure reliable and secure wireless communications."
+    },
+    {
+        "job_title": "Event Manager",
+        "role": "Conference Manager",
+        "company": "Cairn Energy",
+        "experience": "1 to 12 Years",
+        "qualifications": "MBA",
+        "skills": "Event planning Conference logistics Budget management Vendor coordination Marketing and promotion Client relations",
+        "responsibilities": "Specialize in conference and convention planning. Coordinate speaker sessions, exhibitors, and attendee experiences. Oversee event registration and marketing.",
+        "description": "A Conference Manager coordinates and manages conferences, meetings, and events. They plan logistics, handle budgeting, liaise with vendors, and ensure the smooth execution of events, catering to the needs and expectations of attendees."
+    },
+    {
+        "job_title": "Software Tester",
+        "role": "Quality Assurance Analyst",
+        "company": "Adani Ports and Special Economic Zone",
+        "experience": "4 to 12 Years",
+        "qualifications": "MCA",
+        "skills": "Quality assurance processes Testing methodologies (e.g., manual, automated) Bug tracking and reporting Test case development Regression testing",
+        "responsibilities": "Test software applications and systems to identify defects and ensure quality. Create test plans, test cases, and test scripts. Collaborate with development teams to resolve issues.",
+        "description": "A Quality Assurance Analyst tests software and products to ensure they meet quality standards. They identify defects, report issues, and work with development teams to resolve problems."
+    },
+    {
+        "job_title": "Teacher",
+        "role": "Classroom Teacher",
+        "company": "FedEx",
+        "experience": "3 to 15 Years",
+        "qualifications": "PhD",
+        "skills": "Teaching pedagogy Classroom management Curriculum development Student assessment Differentiated instruction",
+        "responsibilities": "Plan and deliver engaging lessons, adapting teaching methods to student needs. Assess student progress and provide feedback. Create a positive and inclusive classroom environment.",
+        "description": "A Classroom Teacher educates students in a specific subject or grade level. They create lesson plans, deliver instruction, assess student progress, and foster a positive learning environment."
+    },
+    {
+        "job_title": "UX/UI Designer",
+        "role": "User Interface Designer",
+        "company": "Ryder System",
+        "experience": "2 to 8 Years",
+        "qualifications": "M.Com",
+        "skills": "UI design principles and best practices Graphic design tools (e.g., Adobe Photoshop, Illustrator) Typography and color theory Visual design and layout Responsive design",
+        "responsibilities": "Create visually appealing user interfaces (UI) that align with brand aesthetics and enhance user engagement. Design interface elements and interactive components. Ensure UI consistency across digital platforms.",
+        "description": "User Interface Designers focus on the visual and interactive aspects of digital interfaces. They design layouts, buttons, and other elements to ensure a cohesive and visually appealing user interface."
+    },
+    {
+        "job_title": "Wedding Planner",
+        "role": "Wedding Consultant",
+        "company": "CSX",
+        "experience": "1 to 10 Years",
+        "qualifications": "BBA",
+        "skills": "Wedding planning Vendor coordination Event management",
+        "responsibilities": "Offer expert advice and guidance to couples planning their weddings. Assist with wedding theme and design selection. Coordinate and negotiate with vendors.",
+        "description": "A Wedding Consultant assists couples in planning and coordinating their weddings, helping them with vendor selection, budget management, and ensuring a seamless wedding day experience."
+    },
+    {
+        "job_title": "QA Analyst",
+        "role": "Performance Testing Specialist",
+        "company": "McDonald's",
+        "experience": "3 to 10 Years",
+        "qualifications": "BCA",
+        "skills": "Performance testing Load testing Stress testing Test scenarios Performance monitoring Benchmarking Performance analysis",
+        "responsibilities": "Focus on performance and load testing to assess the scalability and responsiveness of software applications. Identify bottlenecks and optimize application performance. Generate performance test reports and recommendations.",
+        "description": "Performance Testing Specialists assess the performance of software applications by conducting load, stress, and scalability tests. They identify bottlenecks, optimize performance, and ensure software can handle user demands effectively."
+    },
+    {
+        "job_title": "Litigation Attorney",
+        "role": "Family Law Attorney",
+        "company": "TPG Telecom",
+        "experience": "4 to 12 Years",
+        "qualifications": "B.Tech",
+        "skills": "Family law Divorce proceedings Child custody Mediation Legal counseling Court representation",
+        "responsibilities": "Specialize in family law matters, such as divorce, child custody, and adoption. Advocate for clients in family court proceedings. Offer legal advice and mediation services.",
+        "description": "Family Law Attorneys deal with legal matters related to family relationships. They handle cases like divorce, child custody, adoption, and domestic disputes to provide legal guidance."
+    },
+    {
+        "job_title": "Mechanical Engineer",
+        "role": "Mechanical Design Engineer",
+        "company": "ThyssenKrupp AG",
+        "experience": "3 to 15 Years",
+        "qualifications": "MCA",
+        "skills": "Mechanical engineering CAD software (e.g., SolidWorks, AutoCAD) Finite element analysis Product development Prototyping",
+        "responsibilities": "Design mechanical systems, components, and products. Create 3D models and detailed engineering drawings. Perform structural and thermal analyses.",
+        "description": "Mechanical Design Engineers create and develop mechanical systems and components, from concept to manufacturing, ensuring functionality and safety."
+    },
+    {
+        "job_title": "Network Administrator",
+        "role": "Network Security Analyst",
+        "company": "EnLink Midstream",
+        "experience": "1 to 8 Years",
+        "qualifications": "B.Com",
+        "skills": "Network security protocols Intrusion detection and prevention Security incident response Firewall administration Vulnerability assessment Security policies and procedures Log analysis Ethical hacking Problem-solving Communication skills Attention to detail",
+        "responsibilities": "Manage and secure computer networks, including firewalls and intrusion detection systems. Monitor network traffic for security threats. Implement security policies and procedures.",
+        "description": "Protect an organizations computer networks and systems from security threats, monitor network traffic, and respond to incidents."
+    },
+    {
+        "job_title": "Account Manager",
+        "role": "Sales Account Manager",
+        "company": "NGL Energy Partners",
+        "experience": "1 to 9 Years",
+        "qualifications": "MCA",
+        "skills": "Account management Sales strategy Negotiation and closing skills",
+        "responsibilities": "Manage sales accounts and ensure revenue growth. Identify cross-selling and upselling opportunities. Develop account strategies and forecasts.",
+        "description": "A Sales Account Manager is responsible for building and maintaining relationships with clients, identifying their needs, and proposing tailored solutions to achieve sales targets."
+    },
+    {
+        "job_title": "Brand Manager",
+        "role": "Product Brand Manager",
+        "company": "Bayer AG",
+        "experience": "4 to 12 Years",
+        "qualifications": "M.Com",
+        "skills": "Product branding and marketing Product lifecycle management Cross-functional team collaboration Product launch planning Market segmentation and targeting",
+        "responsibilities": "Manage the branding of specific products or product lines. Create product launch plans and marketing campaigns. Ensure consistent product messaging and brand representation.",
+        "description": "A Product Brand Manager focuses on promoting and managing the brand identity of specific products or product lines within a companys portfolio."
+    },
+    {
+        "job_title": "Social Worker",
+        "role": "School Social Worker",
+        "company": "Deere",
+        "experience": "5 to 14 Years",
+        "qualifications": "M.Tech",
+        "skills": "School social work principles Student assessment and intervention Special education laws Individualized education plans (IEPs) Crisis management Collaboration with educators Family engagement Advocacy Empathy and communication Documentation Cultural competence Licensing and certification",
+        "responsibilities": "Collaborate with schools to support students academic and social needs. Conduct assessments and provide counseling and resources. Advocate for students and families.",
+        "description": "Support students social and emotional well-being in schools, collaborate with educators, and connect families with resources."
+    },
+    {
+        "job_title": "Social Media Coordinator",
+        "role": "Content Creator",
+        "company": "Mondelez International",
+        "experience": "0 to 11 Years",
+        "qualifications": "BA",
+        "skills": "Content creation (e.g., writing, editing, graphic design, video production) Content marketing Social media management SEO optimization Creative storytelling Audience engagement Analytics and reporting Adaptability Communication skills Creativity",
+        "responsibilities": "Create compelling and shareable content for social media platforms, including text, images, and videos. Collaborate with designers and photographers for visuals. Engage with the audience and respond to comments.",
+        "description": "Create engaging and relevant content, such as articles, videos, or social media posts, to promote brands or products."
+    },
+    {
+        "job_title": "Email Marketing Specialist",
+        "role": "Deliverability Analyst",
+        "company": "3M",
+        "experience": "3 to 12 Years",
+        "qualifications": "BA",
+        "skills": "Email deliverability best practices Spam filter testing List hygiene Blacklist monitoring Email authentication (e.g., SPF, DKIM) Deliverability metrics analysis Troubleshooting deliverability issues Communication skills Data analysis Attention to detail",
+        "responsibilities": "Focus on email deliverability, monitoring email sender reputation and list quality. Troubleshoot email delivery issues and maintain sender compliance. Implement best practices for inbox placement.",
+        "description": "Monitor and improve email deliverability rates, troubleshoot delivery issues, and maintain a clean email list."
+    },
+    {
+        "job_title": "HR Generalist",
+        "role": "HR Coordinator",
+        "company": "KKR",
+        "experience": "5 to 9 Years",
+        "qualifications": "PhD",
+        "skills": "Human resources Recruitment Employee onboarding HRIS (HR Information Systems) Record keeping Communication skills",
+        "responsibilities": "Assist with recruitment activities, including posting job openings, coordinating interviews, and managing applicant data. Ensure a positive candidate experience. Maintain recruitment records and metrics.",
+        "description": "HR Coordinators assist in HR functions such as recruitment, onboarding, and employee record maintenance. They often handle administrative tasks, organize training programs, and provide support to the HR department in various ways."
+    },
+    {
+        "job_title": "Legal Assistant",
+        "role": "Legal Secretary",
+        "company": "NGL Energy Partners",
+        "experience": "0 to 15 Years",
+        "qualifications": "B.Tech",
+        "skills": "Legal administrative tasks Document management Calendar and docketing Transcription File organization Communication with clients and courts Knowledge of legal terminology Attention to detail Multitasking Computer skills (e.g., MS Office)",
+        "responsibilities": "Provide administrative support to legal professionals, including scheduling appointments and managing calendars. Prepare legal correspondence and forms. Maintain legal databases and records.",
+        "description": "Provide administrative support to legal professionals, manage schedules, draft documents, and handle correspondence."
+    },
+    {
+        "job_title": "Nurse Practitioner",
+        "role": "Family Nurse Practitioner",
+        "company": "EasyJet",
+        "experience": "0 to 10 Years",
+        "qualifications": "BCA",
+        "skills": "Family medicine Health assessment Pediatric care Chronic disease management Patient education",
+        "responsibilities": "Focus on family-centered care, providing healthcare services to individuals and families of all ages. Perform physical exams, order diagnostic tests, and manage chronic conditions. Promote health and wellness.",
+        "description": "Family Nurse Practitioners specialize in family-centered healthcare, providing comprehensive medical care to individuals of all ages within a family context."
+    },
+    {
+        "job_title": "Account Director",
+        "role": "Account Strategist",
+        "company": "Otis Worldwide",
+        "experience": "1 to 8 Years",
+        "qualifications": "M.Tech",
+        "skills": "Account management Client relations Marketing strategies Campaign optimization Data analysis Communication skills",
+        "responsibilities": "Develop account strategies and marketing plans to achieve client objectives. Analyze campaign performance data and provide strategic recommendations. Collaborate with cross-functional teams.",
+        "description": "Account Strategists work in advertising or marketing agencies, managing client accounts. They develop strategies to meet client goals, oversee campaign execution, and maintain client satisfaction by providing expert guidance and solutions."
+    },
+    {
+        "job_title": "Software Engineer",
+        "role": "Backend Developer",
+        "company": "Oil Search",
+        "experience": "2 to 14 Years",
+        "qualifications": "PhD",
+        "skills": "Proficiency in one or more backend programming languages (e.g., Java, Python, Node.js, Ruby) API development Database management (SQL or NoSQL) Server management and deployment Security best practices Knowledge of web frameworks (e.g., Express, Django)",
+        "responsibilities": "Develop server-side logic and databases using programming languages like Java, Python, or Node.js. Ensure data security and integrity. Implement APIs for seamless communication between frontend and backend.",
+        "description": "A Backend Developer is tasked with building and maintaining the server-side logic and database infrastructure of web applications. They work on the core functionality, data storage, and server communication to ensure the application runs smoothly and efficiently."
+    },
+    {
+        "job_title": "Purchasing Agent",
+        "role": "Supply Chain Coordinator",
+        "company": "HCL Technologies",
+        "experience": "3 to 9 Years",
+        "qualifications": "MBA",
+        "skills": "Supply chain logistics Inventory management Communication skills Problem-solving Vendor coordination",
+        "responsibilities": "Coordinate supply chain activities, including logistics, transportation, and demand planning. Collaborate with suppliers and distribution partners. Monitor and improve supply chain efficiency.",
+        "description": "A Supply Chain Coordinator manages supply chain operations, coordinates logistics, and ensures the seamless flow of goods and materials throughout the supply chain network."
+    },
+    {
+        "job_title": "Sales Consultant",
+        "role": "B2B Sales Consultant",
+        "company": "Associated British Foods",
+        "experience": "5 to 15 Years",
+        "qualifications": "M.Tech",
+        "skills": "B2B sales Business-to-business sales strategies Lead generation Sales negotiations Client relationship building Market research",
+        "responsibilities": "Specialize in business-to-business (B2B) sales, targeting corporate clients. Build and maintain long-term relationships with key clients. Negotiate and close complex sales deals.",
+        "description": "B2B Sales Consultants specialize in business-to-business sales. They identify and target potential corporate clients, negotiate contracts, and build long-term relationships to drive sales growth in the B2B market."
+    },
+    {
+        "job_title": "Civil Engineer",
+        "role": "Structural Engineer",
+        "company": "Xcel Energy",
+        "experience": "4 to 15 Years",
+        "qualifications": "BA",
+        "skills": "Structural engineering principles Structural analysis and design software (e.g., AutoCAD, SAP2000) Building codes and standards Project management Structural integrity assessment",
+        "responsibilities": "Design and analyze structural components and systems for buildings and infrastructure projects. Ensure structural safety and compliance with codes and standards. Collaborate with architects and contractors.",
+        "description": "A Structural Engineer designs and analyzes the structural integrity of buildings, bridges, and other structures. They ensure safety and compliance with engineering standards."
+    },
+    {
+        "job_title": "Network Security Specialist",
+        "role": "Security Operations Center (SOC) Analyst",
+        "company": "Deutsche Post DHL Group",
+        "experience": "0 to 12 Years",
+        "qualifications": "M.Com",
+        "skills": "SOC operations Security incident response Threat detection Log analysis Security tools (e.g., IDS/IPS) Security alerts triage",
+        "responsibilities": "Work in SOC teams to monitor and respond to security incidents. Investigate and analyze security alerts and incidents. Maintain security documentation and incident reports.",
+        "description": "SOC Analysts work in security operations centers. They monitor and respond to security incidents, analyze threats, and implement security protocols to protect an organizations assets."
+    },
+    {
+        "job_title": "UI Developer",
+        "role": "Front-End Developer",
+        "company": "Bodycote",
+        "experience": "2 to 10 Years",
+        "qualifications": "BBA",
+        "skills": "Front-end web development HTML, CSS, JavaScript Responsive design Web performance optimization Cross-browser compatibility",
+        "responsibilities": "Develop and maintain user interfaces for websites and web applications. Write clean and efficient HTML, CSS, and JavaScript code. Collaborate with UX designers to ensure a seamless user experience.",
+        "description": "A Front-End Developer specializes in creating the user interface and user experience of websites or applications. They code and design elements that users interact with directly."
+    },
+    {
+        "job_title": "Financial Planner",
+        "role": "Tax Planner",
+        "company": "Old Republic International",
+        "experience": "4 to 8 Years",
+        "qualifications": "BA",
+        "skills": "Tax planning strategies Tax law knowledge Financial analysis Retirement planning Estate planning Client relationship management Tax optimization Communication skills Attention to detail Tax software proficiency Regulatory compliance",
+        "responsibilities": "Focus on tax planning and optimization, helping clients minimize tax liabilities. Stay updated on tax laws and regulations. Provide tax-efficient financial strategies.",
+        "description": "Assist clients with tax planning, minimize tax liabilities, and stay up-to-date with tax laws and regulations."
+    },
+    {
+        "job_title": "Event Planner",
+        "role": "Event Coordinator",
+        "company": "United Airlines Holdings",
+        "experience": "3 to 8 Years",
+        "qualifications": "BA",
+        "skills": "Event planning Vendor coordination Budget management Marketing and promotion Logistics",
+        "responsibilities": "Plan and coordinate events, including logistics, vendor management, and timelines. Communicate with clients to understand event goals and preferences. Ensure smooth event execution.",
+        "description": "Event Coordinators plan and execute various events, including conferences, parties, and meetings, managing logistics, budgets, and vendor relationships."
+    }
+]

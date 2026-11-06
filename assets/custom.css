@@ -1,0 +1,282 @@
+/* TalentRank AI - Premium Enterprise SaaS Styling */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #0f172a;
+}
+
+/* Background refinement */
+.stApp {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* Top App Header / Hero Banner */
+.hero-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0369a1 100%);
+    border-radius: 16px;
+    padding: 32px 36px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(6, 182, 212, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #ffffff 40%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    max-width: 780px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(14, 165, 233, 0.2);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    color: #38bdf8;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Metric KPI Cards */
+.kpi-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px 22px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+}
+
+.kpi-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.kpi-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.kpi-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+}
+
+.kpi-icon-blue { background: #e0f2fe; color: #0284c7; }
+.kpi-icon-green { background: #dcfce7; color: #16a34a; }
+.kpi-icon-amber { background: #fef3c7; color: #d97706; }
+.kpi-icon-purple { background: #f3e8ff; color: #9333ea; }
+.kpi-icon-cyan { background: #cffafe; color: #0891b2; }
+.kpi-icon-rose { background: #ffe4e6; color: #e11d48; }
+
+.kpi-value {
+    font-size: 1.95rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.kpi-subtext {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Glass & Card Containers */
+.glass-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+.panel-header {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 10px;
+}
+
+/* Skill Tags / Badges */
+.skill-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 3px;
+    transition: all 0.15s ease;
+}
+
+.badge-matched {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.badge-missing {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.badge-preferred {
+    background: #fffbeb;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+
+.badge-additional {
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.badge-neutral {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+}
+
+/* Score Pills */
+.score-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.88rem;
+}
+
+.score-strong { background: #dcfce7; color: #15803d; }
+.score-good { background: #e0f2fe; color: #0369a1; }
+.score-partial { background: #fef3c7; color: #b45309; }
+.score-review { background: #fee2e2; color: #b91c1c; }
+
+/* Streamlit button customizations */
+.stButton>button {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: all 0.2s ease;
+    border: 1px solid #cbd5e1;
+}
+
+.stButton>button:hover {
+    border-color: #0284c7;
+    color: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(2, 132, 199, 0.15);
+}
+
+.stButton>button[kind="primary"] {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: white;
+    border: none;
+}
+
+.stButton>button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+    color: white;
+    box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.4);
+}
+
+/* Sidebar polish */
+[data-testid="stSidebar"] {
+    background: #0f172a;
+    border-right: 1px solid #1e293b;
+}
+
+[data-testid="stSidebar"] * {
+    color: #cbd5e1 !important;
+}
+
+[data-testid="stSidebar"] .stButton>button {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #f8fafc !important;
+}
+
+[data-testid="stSidebarNav"] {
+    padding-top: 1rem;
+}
+
+/* Tabs polish */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.stTabs [data-baseweb="tab"] {
+    padding: 10px 18px;
+    font-weight: 600;
+    color: #64748b;
+    border-radius: 8px 8px 0 0;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #0284c7 !important;
+    border-bottom-color: #0284c7 !important;
+}
