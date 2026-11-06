@@ -1,0 +1,1132 @@
+# ANTIGRAVITY AI — COMPLETE PROJECT DEVELOPMENT PROMPT
+
+## Project: TalentRank AI
+**AI-Powered Resume Intelligence & Candidate Ranking Platform**
+
+### 1. Project Overview
+
+Build a complete, professional, production-style Resume Screening and Candidate Ranking System using Python, Machine Learning, Natural Language Processing (NLP), and Streamlit.
+
+The application should help recruiters and HR teams analyze multiple resumes against a given job description.
+
+The system should automatically:
+
+1. Upload and read multiple resumes.
+2. Extract resume text from PDF, DOCX, and TXT files.
+3. Clean and preprocess resume text.
+4. Extract technical and professional skills.
+5. Analyze job descriptions.
+6. Calculate candidate-job compatibility scores.
+7. Rank candidates from highest to lowest match.
+8. Identify matching and missing skills.
+9. Generate individual candidate analysis reports.
+10. Display recruitment analytics through an interactive dashboard.
+
+**Important:** This must be a fully functional application, not just a frontend UI or static dashboard. Every button, upload component, filter, calculation, chart, and report-generation feature must work.
+
+### 2. Technology Stack
+
+Use the following technologies:
+
+| Component | Technology |
+|---|---|
+| Programming Language | Python 3.10 |
+| Frontend | Streamlit |
+| Data Processing | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| NLP | NLTK, spaCy |
+| Text Similarity | TF-IDF, Cosine Similarity |
+| PDF Extraction | PyMuPDF |
+| DOCX Extraction | python-docx |
+| Visualization | Plotly |
+| Data Storage | SQLite |
+| File Processing | Regex, Python |
+| Model Storage | Joblib |
+| Deployment | Streamlit Community Cloud |
+| Version Control | Git and GitHub |
+
+Use open-source libraries and locally running models. Do not use paid APIs, OpenAI API, Gemini API, Claude API, or other paid external AI services.
+
+The application must work without requiring an API key or external AI service.
+
+### 3. Application Design and User Interface
+
+Create a premium, modern SaaS-style HR analytics dashboard.
+
+**Design requirements:**
+
+- Professional enterprise dashboard design.
+- Modern navy blue, white, and subtle cyan color palette.
+- Clean typography.
+- Responsive layout for desktop and mobile.
+- Sidebar navigation.
+- Interactive charts and tables.
+- Attractive metric cards.
+- Consistent spacing and alignment.
+- Professional icons.
+- Clear success, warning, and error messages.
+- Loading indicators during resume processing.
+
+Avoid a basic Streamlit default appearance. Use custom CSS to improve the interface.
+
+### 4. Sidebar Navigation
+
+Create the following navigation pages:
+
+1. Dashboard
+2. Resume Screening
+3. Candidate Ranking
+4. Candidate Explorer
+5. Skill Gap Analysis
+6. Job Description Manager
+7. Analytics & Reports
+8. Screening History
+9. About Project
+
+Each page should have its own working functionality.
+
+---
+
+## 5. Dashboard Module
+
+Create the main recruitment analytics dashboard.
+
+Display the following KPI cards:
+
+- Total Resumes Uploaded
+- Total Candidates Analyzed
+- Shortlisted Candidates
+- Candidates Requiring Review
+- Average Match Score
+- Total Skills Identified
+
+Include the following visualizations:
+
+**Chart 1: Candidate Match Score Distribution**
+- Show candidates in score ranges:
+  - 80–100%
+  - 60–79%
+  - 40–59%
+  - 0–39%
+
+**Chart 2: Candidate Ranking Overview**
+- Horizontal bar chart displaying the top 10 candidates and their match scores.
+
+**Chart 3: Skill Demand Analysis**
+- Display the most frequently required skills in the selected job description.
+
+**Chart 4: Candidate Experience Distribution**
+- Display the distribution of extracted experience ranges.
+
+**Chart 5: Resume Processing Overview**
+- Successfully processed resumes.
+- Failed resumes.
+- Pending resumes.
+
+Add a recent screening activity table with:
+- Candidate name
+- Job role
+- Match score
+- Screening date
+- Screening status
+
+All dashboard values must be calculated dynamically from actual uploaded and analyzed data.
+
+---
+
+## 6. Resume Upload and Processing Module
+
+Allow recruiters to upload multiple resumes simultaneously.
+
+Supported file formats:
+- PDF
+- DOCX
+- TXT
+
+Features:
+
+- Multiple file upload.
+- Drag-and-drop upload.
+- File name display.
+- File size validation.
+- Duplicate file detection using file hashes.
+- Resume processing progress.
+- Success and failure status.
+- Clear error messages for corrupted or empty documents.
+
+Extract text using:
+- PyMuPDF for PDF.
+- python-docx for DOCX.
+- Standard file reading for TXT.
+
+For scanned PDFs, optionally implement OCR using Tesseract if available. If OCR is unavailable, clearly explain that the document requires OCR.
+
+Do not silently treat an image-only PDF as an empty resume.
+
+After extracting text, store the original filename and processed text.
+
+### 7. Resume Information Extraction
+
+Extract the following information from each resume:
+
+**Personal and Contact Information**
+- Candidate name
+- Email address
+- Phone number
+- Location, if available
+- LinkedIn URL
+- GitHub URL
+- Portfolio URL
+
+**Professional Information**
+- Professional summary
+- Education
+- Degree
+- College or university
+- Graduation year
+- Work experience
+- Internship experience
+- Projects
+- Certifications
+- Technical skills
+- Soft skills
+- Programming languages
+- Frameworks
+- Databases
+- Tools and technologies
+
+Use regex, NLP, spaCy, and predefined extraction rules.
+
+Important:
+- Do not invent information missing from resumes.
+- Mark unavailable fields as "Not Found".
+- Allow recruiters to correct extracted information.
+- Do not use age, gender, religion, caste, disability, photograph, or other protected characteristics in scoring or ranking.
+
+---
+
+## 8. NLP Text Preprocessing Module
+
+Implement a proper NLP pipeline.
+
+Steps:
+
+1. Convert text to lowercase.
+2. Remove unnecessary whitespace.
+3. Remove unwanted special characters.
+4. Remove HTML tags if present.
+5. Tokenize the text.
+6. Remove stopwords where appropriate.
+7. Apply lemmatization.
+8. Normalize technical terminology.
+9. Remove duplicate tokens.
+10. Prepare clean text for vectorization.
+
+Preserve important technical terms, programming language names, certifications, and abbreviations.
+
+Example:
+
+Original:
+"Experienced Python Developer with knowledge of Python, Flask, Machine Learning and SQL."
+
+Processed:
+"experienced python developer python flask machine learning sql"
+
+Keep both original and cleaned text for comparison and reporting.
+
+---
+
+## 9. Skill Extraction Engine
+
+Build a skill extraction system using NLP and a configurable skill dictionary.
+
+Create skill categories:
+
+**Programming Languages**
+- Python
+- Java
+- C
+- C++
+- JavaScript
+- TypeScript
+- R
+- SQL
+
+**Machine Learning and AI**
+- Machine Learning
+- Deep Learning
+- NLP
+- Computer Vision
+- TensorFlow
+- PyTorch
+- Scikit-learn
+- Keras
+- OpenCV
+- Generative AI
+
+**Web Development**
+- HTML
+- CSS
+- JavaScript
+- React
+- Flask
+- Django
+- FastAPI
+- Node.js
+- Express.js
+
+**Databases**
+- MySQL
+- PostgreSQL
+- MongoDB
+- SQLite
+- Oracle
+
+**Data Analytics**
+- Excel
+- Power BI
+- Tableau
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+**Cloud and Tools**
+- AWS
+- Azure
+- Docker
+- Git
+- GitHub
+- Linux
+- Jupyter Notebook
+
+**Soft Skills**
+- Communication
+- Teamwork
+- Leadership
+- Problem Solving
+- Time Management
+- Critical Thinking
+
+Create a separate skill dictionary file so administrators can add or modify skills.
+
+Implement:
+- Exact skill matching.
+- Case-insensitive matching.
+- Skill alias recognition.
+- Multi-word skill recognition.
+- Duplicate skill removal.
+- Skill categorization.
+
+Examples of aliases:
+- ML = Machine Learning
+- DL = Deep Learning
+- NLP = Natural Language Processing
+- JS = JavaScript
+- SKLearn = Scikit-learn
+
+Avoid incorrect partial matches. For example, do not identify "C" inside unrelated words.
+
+---
+
+## 10. Job Description Manager
+
+Create a dedicated page for managing job descriptions.
+
+Recruiters should be able to:
+
+- Enter job title.
+- Enter company name.
+- Enter job description.
+- Specify required skills.
+- Specify preferred skills.
+- Set minimum experience.
+- Set education requirements.
+- Select job category.
+- Set skill importance weights.
+- Save job descriptions.
+- Edit existing job descriptions.
+- Delete job descriptions.
+- Select a previously saved job description.
+
+Automatically extract relevant keywords and skills from the job description.
+
+Separate skills into:
+
+**Mandatory Skills**
+Skills that are essential for the job.
+
+**Preferred Skills**
+Skills that provide an advantage but are not mandatory.
+
+Allow recruiters to manually edit extracted skills.
+
+Store job descriptions in SQLite.
+
+---
+
+## 11. Machine Learning and Candidate Matching Engine
+
+This is the core module of the application.
+
+Implement a hybrid resume-matching approach using:
+
+1. TF-IDF Vectorization.
+2. Cosine Similarity.
+3. Skill Matching.
+4. Experience Matching.
+5. Education Matching.
+6. Keyword Relevance.
+
+### A. TF-IDF Vectorization
+
+Use Scikit-learn's TfidfVectorizer to convert resume text and job description text into numerical vectors.
+
+Compare the vectors using cosine similarity.
+
+Formula:
+
+Cosine Similarity = (A · B) / (||A|| × ||B||)
+
+Convert the similarity into a percentage.
+
+### B. Skill Matching Score
+
+Calculate the percentage of required skills found in the resume.
+
+Formula:
+
+Skill Match Score = (Matched Required Skills / Total Required Skills) × 100
+
+Also calculate preferred skill matching separately.
+
+### C. Experience Matching Score
+
+Compare the candidate's extracted experience with the minimum required experience.
+
+Use transparent rules:
+- Meets or exceeds the requirement: 100.
+- Slightly below the requirement: proportional score.
+- No relevant experience found: 0 or mark as unknown, depending on available evidence.
+
+Do not assume that missing experience information means zero years of experience.
+
+### D. Education Matching Score
+
+Compare the candidate's education against the job requirement.
+
+Use configurable rules and mark unavailable education information as unknown.
+
+### E. Keyword Relevance Score
+
+Calculate how many relevant job-description keywords appear in the resume.
+
+### F. Final Match Score
+
+Use the following initial weighted scoring model:
+
+| Component | Weight |
+|---|---:|
+| Required Skill Match | 40% |
+| TF-IDF Similarity | 25% |
+| Preferred Skill Match | 15% |
+| Experience Match | 10% |
+| Education Match | 5% |
+| Keyword Relevance | 5% |
+| Total | 100% |
+
+Formula:
+
+Final Score =
+
+(Required Skills × 0.40) +
+(TF-IDF Similarity × 0.25) +
+(Preferred Skills × 0.15) +
+(Experience × 0.10) +
+(Education × 0.05) +
+(Keyword Relevance × 0.05)
+
+All component scores must be between 0 and 100.
+
+Important scoring rules:
+- Allow recruiters to change weights.
+- Validate that all weights total 100%.
+- Normalize scores when information is genuinely unavailable.
+- Clearly show when a score is based on incomplete information.
+- Missing information must not automatically be interpreted as a negative qualification.
+- Do not claim that the model predicts job performance.
+- Show the contribution of each component to the final score.
+
+### G. Candidate Ranking
+
+After calculating scores, rank candidates in descending order.
+
+Display:
+
+- Rank
+- Candidate name
+- Resume filename
+- Job role
+- Final match score
+- Required skills matched
+- Missing required skills
+- Experience
+- Screening recommendation
+
+Use these recommendation labels:
+
+- Strong Match
+- Good Match
+- Partial Match
+- Needs Review
+
+These are decision-support labels, not automatic hiring or rejection decisions.
+
+---
+
+## 12. Candidate Ranking Page
+
+Create a professional candidate ranking table.
+
+Features:
+
+- Sort candidates by match score.
+- Search by candidate name.
+- Filter by job role.
+- Filter by match score.
+- Filter by experience.
+- Filter by skills.
+- Display top 5 candidates.
+- Display top 10 candidates.
+- Display all candidates.
+- Export results to CSV.
+- Download candidate reports.
+
+Add a candidate comparison feature.
+
+Recruiters should be able to select up to five candidates and compare:
+
+- Overall match score.
+- Required skills.
+- Preferred skills.
+- Missing skills.
+- Experience.
+- Education.
+- TF-IDF similarity.
+- Skill match percentage.
+
+---
+
+## 13. Skill Gap Analysis
+
+Build a dedicated skill gap analysis page.
+
+For each candidate, display:
+
+**Matched Skills**
+Skills available in the resume and required by the job.
+
+**Missing Mandatory Skills**
+Important skills required by the job but not detected in the resume.
+
+**Missing Preferred Skills**
+Additional skills that would improve the candidate's match.
+
+**Additional Skills**
+Skills found in the resume but not requested in the job description.
+
+Visualizations:
+- Matched versus missing skills.
+- Skill coverage percentage.
+- Category-wise skill comparison.
+
+Example:
+
+Job Role: Python Developer
+
+| Required Skill | Candidate Skill | Status |
+|---|---|---|
+| Python | Python | Matched |
+| Flask | Flask | Matched |
+| SQL | SQL | Matched |
+| Django | Not Found | Missing |
+| REST API | REST API | Matched |
+| Docker | Not Found | Missing |
+
+Display personalized skill-gap explanations without assuming that an undetected skill is definitely absent from the candidate's actual abilities.
+
+---
+
+## 14. Candidate Explorer
+
+Create an individual candidate profile page.
+
+When a recruiter selects a candidate, display:
+
+- Candidate name.
+- Contact details, when available.
+- Professional summary.
+- Education.
+- Experience.
+- Internship details.
+- Projects.
+- Certifications.
+- Technical skills.
+- Soft skills.
+- Match score.
+- Skill matching score.
+- Text similarity score.
+- Missing skills.
+- Additional skills.
+- Match explanation.
+
+Add a visual score breakdown.
+
+Add a resume preview or download option.
+
+Allow recruiters to add internal notes and manually update screening status.
+
+---
+
+## 15. Analytics and Reports
+
+Create an analytics page with:
+
+- Overall candidate statistics.
+- Average match score.
+- Highest match score.
+- Lowest match score.
+- Most common candidate skills.
+- Most demanded job skills.
+- Skill gap statistics.
+- Candidate experience distribution.
+- Candidate score distribution.
+- Job-wise candidate comparison.
+
+Use Plotly for interactive charts.
+
+Generate downloadable reports:
+
+1. Candidate ranking report.
+2. Individual candidate report.
+3. Skill gap report.
+4. Complete screening summary.
+
+Support CSV and PDF downloads.
+
+Reports should include:
+- Job title.
+- Screening date.
+- Candidate name.
+- Final match score.
+- Score breakdown.
+- Matched skills.
+- Missing skills.
+- Screening recommendation.
+- Explanation of the scoring method.
+
+---
+
+## 16. Screening History
+
+Save previous screening sessions in SQLite.
+
+Each screening session should contain:
+
+- Screening ID.
+- Job title.
+- Job description.
+- Number of resumes.
+- Number of processed resumes.
+- Screening date.
+- Candidate rankings.
+- Score breakdowns.
+
+Features:
+- View previous screening sessions.
+- Search screening history.
+- Open previous candidate results.
+- Compare different screening sessions.
+- Delete screening sessions.
+
+Avoid storing unnecessary personal information.
+
+---
+
+## 17. Database Design
+
+Use SQLite for persistent storage.
+
+Create these tables:
+
+### Table 1: candidates
+- candidate_id
+- candidate_name
+- email
+- phone
+- location
+- resume_filename
+- resume_hash
+- extracted_text
+- cleaned_text
+- extracted_skills
+- education
+- experience
+- created_at
+
+### Table 2: job_descriptions
+- job_id
+- job_title
+- company_name
+- description
+- required_skills
+- preferred_skills
+- minimum_experience
+- education_requirement
+- created_at
+
+### Table 3: screening_sessions
+- session_id
+- job_id
+- total_resumes
+- processed_resumes
+- screening_date
+
+### Table 4: screening_results
+- result_id
+- session_id
+- candidate_id
+- final_score
+- skill_score
+- similarity_score
+- experience_score
+- education_score
+- keyword_score
+- preferred_skill_score
+- matched_skills
+- missing_skills
+- recommendation
+
+### Table 5: candidate_notes
+- note_id
+- candidate_id
+- session_id
+- notes
+- screening_status
+- updated_at
+
+Use proper database relationships and parameterized queries.
+
+Store uploaded files only when necessary. Make file retention configurable and provide a deletion option.
+
+---
+
+## 18. Dataset Integration
+
+Support the following datasets for testing and experimentation:
+
+**Dataset 1: Resume Dataset**
+
+https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset
+
+Use this dataset for:
+- Resume text processing.
+- Resume category classification.
+- Skill extraction.
+- Resume analysis.
+
+**Dataset 2: Job Description Dataset**
+
+https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset
+
+Use this dataset for:
+- Job description analysis.
+- Keyword extraction.
+- Skill identification.
+- Job role analysis.
+
+**Dataset 3: US Jobs Dataset**
+
+https://www.kaggle.com/datasets/PromptCloudHQ/us-jobs-on-monstercom
+
+Use this dataset for:
+- Job requirement analysis.
+- Job role comparison.
+- Skill demand analysis.
+
+Dataset integration requirements:
+
+- Allow CSV dataset uploads.
+- Automatically identify relevant columns where possible.
+- Allow users to select the resume text column.
+- Allow users to select the job description column.
+- Handle missing values.
+- Remove duplicate records.
+- Provide dataset preview.
+- Display dataset statistics.
+
+Do not require a Kaggle API key to run the application. Dataset files should be optional.
+
+---
+
+## 19. Explainable AI Module
+
+Create a dedicated explanation system.
+
+For every candidate, explain:
+
+1. Why the candidate received the calculated score.
+2. Which skills matched the job.
+3. Which mandatory skills were not detected.
+4. How much text similarity was achieved.
+5. How experience contributed to the score.
+6. How education contributed to the score.
+7. Which factors contributed most to the ranking.
+
+Example:
+
+Candidate: Rahul Sharma
+
+Final Match Score: 84.5%
+
+Explanation:
+- Strong Python skill match.
+- Flask and SQL skills detected.
+- Good job-description text similarity.
+- Required experience appears to meet the specified requirement.
+- Docker was not detected in the resume.
+- Preferred AWS skill was not detected.
+
+Recommendation: Strong Match — Recruiter Review Suggested.
+
+The explanation must be generated from actual calculated results, not fixed or fabricated text.
+
+---
+
+## 20. Important Functional Requirements
+
+Make sure the following work correctly:
+
+- Multiple resume upload.
+- PDF parsing.
+- DOCX parsing.
+- TXT parsing.
+- Resume information extraction.
+- NLP preprocessing.
+- Skill extraction.
+- Job description input.
+- Job description parsing.
+- TF-IDF similarity calculation.
+- Cosine similarity calculation.
+- Weighted scoring.
+- Candidate ranking.
+- Skill gap identification.
+- Candidate comparison.
+- CSV export.
+- PDF report generation.
+- SQLite storage.
+- Screening history.
+- Dashboard charts.
+- Search and filtering.
+- Error handling.
+- Empty-state handling.
+- Mobile-friendly interface.
+
+Never use sample data as if it were real candidate data. If sample data is needed, clearly label it as demonstration data.
+
+---
+
+## 21. Project Folder Structure
+
+Create a clean, modular project architecture.
+
+```text
+TalentRank-AI/
+│
+├── app.py
+├── config.py
+├── requirements.txt
+├── runtime.txt
+├── README.md
+├── .gitignore
+│
+├── assets/
+│   ├── logo.png
+│   └── custom.css
+│
+├── data/
+│   ├── skills_dictionary.json
+│   └── sample_data/
+│
+├── database/
+│   ├── db.py
+│   └── schema.sql
+│
+├── modules/
+│   ├── resume_parser.py
+│   ├── text_preprocessing.py
+│   ├── skill_extractor.py
+│   ├── job_parser.py
+│   ├── similarity_engine.py
+│   ├── scoring_engine.py
+│   ├── candidate_ranker.py
+│   ├── skill_gap_analyzer.py
+│   ├── explainability.py
+│   └── report_generator.py
+│
+├── pages/
+│   ├── 1_Dashboard.py
+│   ├── 2_Resume_Screening.py
+│   ├── 3_Candidate_Ranking.py
+│   ├── 4_Candidate_Explorer.py
+│   ├── 5_Skill_Gap_Analysis.py
+│   ├── 6_Job_Description_Manager.py
+│   ├── 7_Analytics_Reports.py
+│   ├── 8_Screening_History.py
+│   └── 9_About.py
+│
+├── utils/
+│   ├── validators.py
+│   ├── helpers.py
+│   └── export_utils.py
+│
+├── tests/
+│   ├── test_resume_parser.py
+│   ├── test_skill_extractor.py
+│   ├── test_scoring_engine.py
+│   └── test_candidate_ranker.py
+│
+└── .streamlit/
+    └── config.toml
+```
+
+Use this structure or a better modular structure if necessary. Avoid putting the entire project into one Python file.
+
+---
+
+## 22. Requirements.txt
+
+Create a compatible requirements.txt for Python 3.10.
+
+Include the necessary packages:
+
+```text
+streamlit
+pandas
+numpy
+scikit-learn
+nltk
+spacy
+PyMuPDF
+python-docx
+plotly
+matplotlib
+seaborn
+joblib
+reportlab
+openpyxl
+```
+
+Add any other genuinely required dependencies.
+
+Avoid unnecessary heavy libraries.
+
+Pin compatible versions after testing the complete application.
+
+If spaCy's English model is needed, provide clear installation instructions. The application must also have a functional fallback using regex and the local skill dictionary.
+
+Do not depend on downloading models at application startup.
+
+---
+
+## 23. Streamlit Deployment Requirements
+
+The final application must be deployable on Streamlit Community Cloud.
+
+Requirements:
+
+1. The entry point must be `app.py`.
+2. All page files must work with Streamlit navigation.
+3. Include requirements.txt.
+4. Include runtime.txt if supported by the deployment configuration.
+5. Do not hardcode local computer paths.
+6. Do not depend on files stored outside the repository.
+7. Include proper exception handling.
+8. Ensure that application startup does not require API keys.
+9. Avoid downloading large NLP models every time the app runs.
+10. Use Streamlit caching where appropriate.
+11. Keep memory usage reasonable.
+12. Ensure the app can run with optional datasets.
+
+Run locally using:
+
+```bash
+python -m pip install -r requirements.txt
+streamlit run app.py
+```
+
+Do not use `streamlit run streamlit_app.py`. The main entry point is `app.py`.
+
+For deployment:
+- Push the complete project to GitHub.
+- Open Streamlit Community Cloud.
+- Connect the GitHub repository.
+- Select the correct branch.
+- Select `app.py` as the main file.
+- Deploy the application.
+
+Important: Streamlit Community Cloud has an ephemeral local filesystem. Do not assume SQLite records or uploaded files will survive application restarts. Explain the persistence limitation and keep database storage configurable. For a persistent production deployment, provide an optional external database integration plan.
+
+---
+
+## 24. Testing and Validation
+
+Before completing the project, test the following:
+
+**Resume Parser**
+- Valid PDF.
+- Valid DOCX.
+- Valid TXT.
+- Empty document.
+- Corrupted document.
+- Scanned PDF.
+
+**Skill Extractor**
+- Exact skill matches.
+- Skill aliases.
+- Duplicate skills.
+- Multi-word skills.
+- Incorrect partial matches.
+
+**Scoring Engine**
+- All required skills matched.
+- Some required skills matched.
+- No required skills matched.
+- Missing experience information.
+- Missing education information.
+- Custom scoring weights.
+- Weight validation.
+
+**Candidate Ranking**
+- Correct descending ranking.
+- Equal-score handling.
+- Missing information handling.
+- Duplicate resume handling.
+
+**Streamlit Application**
+- Every navigation page.
+- Every button.
+- Resume uploads.
+- Job description saving.
+- Candidate filtering.
+- CSV export.
+- PDF export.
+- Screening history.
+
+Create unit tests and fix errors before deployment.
+
+---
+
+## 25. README.md Documentation
+
+Create a professional GitHub README containing:
+
+1. Project title.
+2. Project overview.
+3. Problem statement.
+4. Project objectives.
+5. Key features.
+6. Technology stack.
+7. System architecture.
+8. Machine learning methodology.
+9. NLP workflow.
+10. Candidate scoring formula.
+11. Project folder structure.
+12. Dataset sources.
+13. Installation instructions.
+14. Local execution instructions.
+15. Streamlit deployment instructions.
+16. Screenshots section.
+17. Future enhancements.
+18. Limitations.
+19. Ethical AI and responsible hiring considerations.
+20. Author and project credits.
+
+Include clear badges for Python, Streamlit, Scikit-learn, NLP, and Machine Learning.
+
+---
+
+## 26. Future Enhancements
+
+Design the architecture so that these features can be added later:
+
+- Semantic embeddings using a locally hosted sentence-transformer model.
+- Multilingual resume processing.
+- Advanced named entity recognition.
+- Resume quality analysis.
+- Recruiter feedback integration.
+- Candidate pipeline management.
+- Email invitation generation.
+- Interview question recommendations.
+- Advanced skill taxonomy.
+- Persistent cloud database.
+- Role-wise recruitment analytics.
+
+Do not implement paid external API dependencies.
+
+---
+
+## 27. Final Expected Deliverables
+
+At the end of development, provide:
+
+1. Complete working Python project.
+2. Professional Streamlit dashboard.
+3. Modular source code.
+4. NLP skill extraction engine.
+5. Resume parsing engine.
+6. Job description parser.
+7. TF-IDF and cosine similarity engine.
+8. Explainable weighted scoring system.
+9. Candidate ranking system.
+10. Skill gap analysis.
+11. SQLite database.
+12. CSV and PDF report generation.
+13. Automated tests.
+14. requirements.txt.
+15. README.md.
+16. .gitignore.
+17. Streamlit deployment configuration.
+18. Sample demonstration resumes and job descriptions, clearly marked as synthetic.
+
+### Final Development Instructions
+
+Build the project step by step.
+
+**Phase 1:** Create the project architecture and Streamlit UI.
+
+**Phase 2:** Implement PDF, DOCX, and TXT resume parsing.
+
+**Phase 3:** Implement NLP preprocessing and skill extraction.
+
+**Phase 4:** Implement job description parsing.
+
+**Phase 5:** Develop TF-IDF and cosine similarity.
+
+**Phase 6:** Develop the weighted scoring and ranking engine.
+
+**Phase 7:** Implement skill gap analysis and explainability.
+
+**Phase 8:** Implement SQLite storage and screening history.
+
+**Phase 9:** Implement dashboard analytics and report generation.
+
+**Phase 10:** Test the entire application and prepare Streamlit deployment.
+
+Do not stop after creating the UI. Complete the backend functionality and connect every feature to actual data.
+
+Do not leave placeholder buttons, fake charts, hardcoded candidate scores, or unfinished modules.
+
+After implementation, run the application, identify errors, fix them, and provide the final commands for running and deploying the project.
+
+**Final goal:** Deliver a complete, professional, explainable, recruiter-focused AI resume screening platform that can be demonstrated as a real Machine Learning and NLP project on GitHub, Streamlit, and LinkedIn.

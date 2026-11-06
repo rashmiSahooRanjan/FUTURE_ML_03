@@ -97,3 +97,4 @@ class CandidateRanker:
 
 
 candidate_ranker = CandidateRanker()
+

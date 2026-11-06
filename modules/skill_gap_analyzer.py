@@ -97,3 +97,4 @@ class SkillGapAnalyzer:
 
 
 skill_gap_analyzer = SkillGapAnalyzer()
+

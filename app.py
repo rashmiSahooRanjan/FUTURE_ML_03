@@ -171,3 +171,4 @@ with c_d2:
     - **Components:** Real-world enterprise postings with roles, required skills, qualifications, and experience.
     - **Use Cases:** Streamed role search, curated job presets, and automatic skill segmentation.
     """)
+

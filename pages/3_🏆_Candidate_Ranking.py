@@ -197,3 +197,4 @@ if selected_for_comp:
             font=dict(family="Plus Jakarta Sans", size=11)
         )
         st.plotly_chart(fig_bar, use_container_width=True)
+

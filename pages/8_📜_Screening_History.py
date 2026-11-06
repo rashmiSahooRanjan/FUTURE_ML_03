@@ -111,3 +111,4 @@ if len(all_sessions) >= 2:
     st.plotly_chart(fig_cmp, use_container_width=True)
 else:
     st.info("Run at least two screening sessions to enable cohort comparison.")
+

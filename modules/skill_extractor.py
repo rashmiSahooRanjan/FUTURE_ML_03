@@ -112,3 +112,4 @@ class SkillExtractor:
 
 
 skill_extractor = SkillExtractor()
+

@@ -190,3 +190,4 @@ with col_pdf_dl:
         mime="application/pdf",
         use_container_width=True
     )
+

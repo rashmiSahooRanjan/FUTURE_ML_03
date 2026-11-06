@@ -349,3 +349,4 @@ class DatabaseManager:
 
 # Global singleton
 db = DatabaseManager()
+

@@ -182,3 +182,4 @@ if latest_results:
     st.dataframe(df_recent, use_container_width=True, hide_index=True)
 else:
     st.info("No recent screening activities found.")
+

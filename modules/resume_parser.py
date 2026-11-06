@@ -229,3 +229,4 @@ class ResumeParser:
 
 
 resume_parser = ResumeParser()
+

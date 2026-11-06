@@ -121,3 +121,4 @@ if missing_mandatory:
         """)
 else:
     st.success("🎉 The candidate matches all mandatory technical skills listed for this role! Focus interview questions on architecture, systems design, and cultural alignment.")
+

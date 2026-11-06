@@ -322,3 +322,4 @@ class ReportGenerator:
 
 
 report_generator = ReportGenerator()
+

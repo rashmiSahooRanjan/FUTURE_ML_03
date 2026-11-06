@@ -245,3 +245,4 @@ def plot_candidate_radar(candidate: Dict[str, Any]):
         font=dict(family="Plus Jakarta Sans", size=11)
     )
     return fig
+

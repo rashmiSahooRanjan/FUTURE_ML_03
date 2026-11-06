@@ -41,3 +41,7 @@ htmlcov/
 
 # SQLite temporary journals
 *.db-journal
+
+# Large Datasets (exceeds GitHub 100MB limit)
+Dataset/
+

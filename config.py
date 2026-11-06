@@ -58,3 +58,4 @@ THEME = {
     "text_muted": "#64748b",
     "border": "#e2e8f0"
 }
+

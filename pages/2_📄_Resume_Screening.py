@@ -231,3 +231,4 @@ if st.button("🚀 Start Screening & Candidate Ranking", type="primary", use_con
     with col_go:
         if st.button("View Candidate Leaderboard & Rankings →", type="primary", use_container_width=True):
             st.switch_page("pages/3_🏆_Candidate_Ranking.py")
+

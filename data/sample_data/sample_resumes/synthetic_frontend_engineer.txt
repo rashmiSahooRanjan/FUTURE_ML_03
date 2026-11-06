@@ -1,0 +1,28 @@
+[DEMONSTRATION SYNTHETIC RESUME]
+Candidate Name: David Martinez
+Email: david.martinez@example.com
+Phone: +1 555-456-7890
+Location: Austin, TX
+LinkedIn: linkedin.com/in/davidmartinez-web
+GitHub: github.com/davidmartinez-ui
+
+Professional Summary:
+Creative Frontend Developer with 3 years of experience building modern, responsive, and accessible web applications using React, Next.js, and TypeScript. Passionate about UI/UX design, design systems, and frontend performance optimization.
+
+Technical Skills:
+- Web Technologies: React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Redux
+- UI/UX & Design: Figma, Responsive Design, Web Accessibility (WCAG)
+- Tools & Databases: Git, GitHub, REST API, Node.js, Webpack, Postman
+- Soft Skills: Teamwork, Agile, Time Management, Creative Problem Solving
+
+Work Experience:
+Frontend Developer | WebCraft Studios (2021 - Present)
+- Developed responsive web interfaces using React, TypeScript, and Tailwind CSS.
+- Optimized bundle sizes and web vitals, improving Lighthouse performance score to 98.
+- Collaborated closely with UI/UX designers using Figma to implement design systems.
+
+Junior Web Developer | PixelSpark (2020 - 2021)
+- Built interactive landing pages and reusable component libraries using HTML, CSS, JavaScript, and React.
+
+Education:
+Bachelor of Computer Applications (BCA) | State Tech University (2017 - 2020)

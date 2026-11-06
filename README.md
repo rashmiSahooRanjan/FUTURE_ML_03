@@ -1,4 +1,4 @@
-# 🎯 TalentRank AI — AI-Powered Resume Intelligence & Candidate Ranking Platform
+# FUTURE_ML_03 — TalentRank AI: AI-Powered Resume Intelligence & Candidate Ranking Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
@@ -342,3 +342,4 @@ TalentRank AI is strictly built to comply with modern algorithmic hiring regulat
 
 ## 📄 License & Credits
 Developed as an advanced Machine Learning & NLP intern project. Distributed under the MIT License.
+

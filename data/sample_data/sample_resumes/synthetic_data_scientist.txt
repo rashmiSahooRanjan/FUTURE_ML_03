@@ -1,0 +1,31 @@
+[DEMONSTRATION SYNTHETIC RESUME]
+Candidate Name: Priya Sharma
+Email: priya.sharma@example.com
+Phone: +1 555-987-6543
+Location: Seattle, WA
+LinkedIn: linkedin.com/in/priyasharma-ds
+GitHub: github.com/priyasharma-ai
+
+Professional Summary:
+Data Scientist and Machine Learning Researcher with 4.5 years of industry experience developing predictive modeling pipelines, NLP systems, and business intelligence dashboards. Skilled in translating complex data into strategic business insights.
+
+Technical Skills:
+- Machine Learning & AI: Machine Learning, Deep Learning, Natural Language Processing, TensorFlow, PyTorch, Scikit-learn, OpenCV
+- Programming: Python, R, SQL
+- Data Analytics: Pandas, NumPy, Matplotlib, Seaborn, Tableau, Power BI, Excel, Apache Spark
+- Cloud & Tools: AWS, Docker, Git, Linux, Jupyter Notebook
+- Soft Skills: Problem Solving, Communication, Critical Thinking, Team Collaboration
+
+Work Experience:
+Senior Data Scientist | Apex Intelligence Labs (2022 - Present)
+- Designed NLP pipelines and classification models using Python, Scikit-learn, and PyTorch.
+- Conducted A/B testing and statistical analysis driving 18% improvement in customer retention.
+- Created interactive Power BI and Tableau dashboards for executive leadership.
+
+Data Analyst | Insight Dynamics (2019 - 2022)
+- Built automated data ETL pipelines using SQL, Pandas, and Python.
+- Trained predictive machine learning models to forecast customer churn.
+
+Education:
+Master of Science (M.Sc) in Data Science | Pacific State University (2017 - 2019)
+Bachelor of Science (B.Sc) in Statistics | National College (2014 - 2017)

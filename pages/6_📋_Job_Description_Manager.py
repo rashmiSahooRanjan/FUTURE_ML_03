@@ -168,3 +168,4 @@ with tab_manage:
                         db.delete_job_description(j["job_id"])
                         st.success(f"Job #{j['job_id']} deleted!")
                         st.rerun()
+

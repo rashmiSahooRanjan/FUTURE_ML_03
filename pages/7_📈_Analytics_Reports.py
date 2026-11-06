@@ -132,3 +132,4 @@ if skill_counts:
         margin=dict(t=40, b=20, l=20, r=20)
     )
     st.plotly_chart(fig_skills_freq, use_container_width=True)
+

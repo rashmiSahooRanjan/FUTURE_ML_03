@@ -69,3 +69,4 @@ CREATE TABLE IF NOT EXISTS candidate_notes (
 CREATE INDEX IF NOT EXISTS idx_candidate_hash ON candidates (resume_hash);
 CREATE INDEX IF NOT EXISTS idx_screening_session ON screening_results (session_id);
 CREATE INDEX IF NOT EXISTS idx_candidate_notes ON candidate_notes (candidate_id, session_id);
+

@@ -125,3 +125,4 @@ class JobParser:
 
 
 job_parser = JobParser()
+
